@@ -96,7 +96,8 @@ namespace WebApi
                 .AllowAnyOrigin()
                 .AllowAnyMethod()
                 .AllowAnyHeader());
-
+            app.UseHttpsRedirection(); 
+            
             app.UseAuthentication();
             app.UseAuthorization();
 
