@@ -98,7 +98,10 @@ namespace WebApi.Services
 
             if (!string.IsNullOrWhiteSpace(userParam.LastName))
                 user.LastName = userParam.LastName;
-
+            if (!string.IsNullOrWhiteSpace(userParam.Email))
+                user.Email = userParam.Email;
+            
+            user.isAdmin = userParam.isAdmin;
             // update password if provided
             if (!string.IsNullOrWhiteSpace(password))
             {

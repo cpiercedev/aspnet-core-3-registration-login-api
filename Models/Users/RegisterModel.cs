@@ -11,6 +11,8 @@ namespace WebApi.Models.Users
         public string LastName { get; set; }
         [Required]
         public bool isAdmin {get; set;}
+        
+        public string Email {get; set;}
         [Required]
         public string Username { get; set; }
 
